@@ -1,0 +1,305 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+@font-face {
+    font-family: 'CGOmegaRegular';
+    src: url('cg_omega_true_type-webfont.eot');
+    src: url('cg_omega_true_type-webfont.eot?#iefix') format('embedded-opentype'),
+         url('cg_omega_true_type-webfont.woff') format('woff'),
+         url('cg_omega_true_type-webfont.ttf') format('truetype'),
+         url('cg_omega_true_type-webfont.svg#CGOmegaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+ol, ul {
+	
+}
+blockquote, q {
+	quotes: none;
+}
+:focus {
+	outline: 0;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	font: 12px/18px "CGOmegaRegular", Tahoma, Verdana, sans-serif;
+	width: 80%;
+	height: 100%;
+	
+	
+	letter-spacing: 90%;
+}
+a {
+	color: #942923;
+	outline: none;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	text-shadow:1px 1px 2px rgba(10,10,10,0.5);
+}
+h1{
+	font-size:14px;
+	color:##335012;	
+	text-transform: capitalize;
+	margin-bottom:9px;
+}
+p {
+	margin: 0 0 10px
+}
+img {
+	border: none;
+}
+input {
+	vertical-align: middle;
+}
+#wrapper {
+	width: 885px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	background: url(../images/border-left.png) top left repeat-y;
+}
+
+#wrapper-inside{
+	padding: 0px 17px;
+	background: url(../images/border-right.png) top right repeat-y;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	height: 400px;
+	background: url(../images/header-bg.png) #D6D6D6 top repeat-x;
+}
+
+#header-inside{
+	padding-top: 30px;
+}
+
+.logo-div{
+	padding-left:10px;
+}
+#navigation{
+	background: url(../images/menu-bg.png) top repeat-x;
+	height:31px;
+	margin-top:18px;
+}
+#menu{
+	display:block;
+	float:left;
+	width: 620px;
+	padding:5px;
+	padding-left:20px;	
+}
+#menu ul{
+	display:block;
+	list-style:none;
+	margin:0;
+	padding:0;	
+}
+#menu ul li{
+	list-style:none;
+	float:left;
+	color:#f2f2f2;
+	
+}
+#menu ul li a{
+	color:#f2f2f2;
+	text-decoration:none;
+	padding: 0px 12px;
+	padding-top:6px;
+	
+}
+
+#search-box{
+	padding:4px;
+	text-align:right;
+	padding-right:15px;
+}
+#search-box form{
+	padding:0;
+	margin:0;	
+}
+#search-box #q{
+	padding:2px;
+	font-size:11px;
+	width:150px;
+	border:none;
+}
+#search-box #submit-button{
+	background:url(../images/search.png) no-repeat;
+	width:30px;
+	height:20px;
+	border:none;
+	text-indent:-999em;	
+}
+
+/*--Main Container--*/
+.main_view {
+	float: left;
+	position: relative;
+}
+/*--Window/Masking Styles--*/
+.window {
+	height:223px;	width: 850px;
+	overflow: hidden; /*--Hides anything outside of the set width/height--*/
+	position: relative;
+}
+.image_reel {
+	position: absolute;
+	top: 0; left: 0;
+}
+.image_reel img {float: left;}
+
+/*--Paging Styles--*/
+.paging {
+	position: absolute;
+	bottom: 10px; right: -7px;
+	width: 178px; height:27px;
+	z-index: 100; /*--Assures the paging stays on the top layer--*/
+	text-align: center;
+	line-height: 40px;
+	display: none; /*--Hidden by default, will be later shown with jQuery--*/
+}
+.paging a {
+	padding: 5px;
+	text-decoration: none;
+	color: #fff;
+	text-indent: -999em;
+	display:block;
+	width:9px;
+	float:left;
+	background:url(../images/bullet.png) center no-repeat;
+}
+.paging a.active {
+	font-weight: bold; 
+	background:url(../images/bullet-active.png) center no-repeat;
+	
+}
+.paging a:hover {font-weight: bold;}
+/* Middle
+-----------------------------------------------------------------------------*/
+#middle {
+	width: 100%;
+	padding: 0;
+	height: 1%;
+	position: relative;
+	background: #E2F1CF;
+}
+#middle:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+#container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+#content {
+	padding: 0 283px 0 0;
+	
+	}
+
+#content-inside{
+	padding:21px 36px;
+	padding-left:40px;
+	padding-bottom:5px;
+	background:#ECF5E4;
+	text-align:justify;
+}
+/* Sidebar Right
+-----------------------------------------------------------------------------*/
+#sideRight {
+	float: left;
+	margin-right: -3px;
+	width: 283px;
+	margin-left: -283px;
+	position: relative;
+}
+
+#right-inside{
+	padding:13px;
+}
+
+#sideRight h2{
+	margin-bottom: 9px;
+	font-size:16px;
+	text-transform:uppercase;
+}
+.icon-contact{
+	margin-right: 10px;
+	float:left;
+	width:30px;
+	margin-bottom:5px;
+}
+.contact-details{
+	display:block;
+	float:left;
+	width:200px;
+	margin-bottom:9px;
+}
+
+.block{
+	padding-top: 15px;
+	background:url(../images/block-bg.png) top center no-repeat;
+	display:block;
+	float:left;
+}
+.social-icons{
+	text-align:center;
+	padding-left:50px;	
+}
+.social-icons img{
+	border:none;
+	margin-right:19px;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	width: 100%;
+	margin:  auto;
+	height: 33px;
+	background: #942923;
+	position: relative;
+	color:#ffffff;
+	font-size:11px;
+}
+#footer-inside{
+	padding-top:8px;
+	padding-right:40px;
+	text-align:right;
+}
